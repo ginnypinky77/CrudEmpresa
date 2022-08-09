@@ -1,0 +1,38 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+//este archivos es para opciones del complilador
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strictPropertyInitialization": false,  /*para eliminar el error de compilación.
+
+    De lo contrario, hay que inicializar todas las variables
+    
+    */
+    "baseUrl": "./", //Directorio base para resolver nombres de módulos no absolutos.
+    "outDir": "./dist/out-tsc", //Redirigir la estructura de salida al directorio.
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,/// ​​EVISE DE EXPED DE INTERRUPTOR DE CORRECCIÓN (es decir, si no hay una declaración de interrupción, no se ejecutará)
+    "sourceMap": true,//// Archivo SOURCEMAP Generando el archivo de destino
+    "declaration": false,// Generar un archivo de declaración, generar automáticamente un archivo de declaración después de encender
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",//Política de análisis del módulo
+    "importHelpers": true,
+    "target": "es2017",//idioma del destino
+    "module": "es2020",
+    "lib": [           /*TS necesita bibliotecas de referencia, a saber, archivos de declaración, ES5 Referencia predeterminada DOM, ES5, Scripthost, si necesita usar Las funciones de versión avanzada de ES, generalmente deben configurarse*/
+      "es2020",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

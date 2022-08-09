@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>Eliminar Empresa</h2>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label>Id:</label>
+                    <input type="text" class="form-control" name="id" [(ngModel)]="empresa.id" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="empresa.nombre">
+                </div>
+                <div class="form-group">
+                    <label>Telefono:</label>
+                    <input type="text" class="form-control" name="telefono" [(ngModel)]="empresa.telefono">
+                </div>
+                <div class="form-group">
+                    <label>Precio:</label>
+                    <input type="text" class="form-control" name="precio" [(ngModel)]="empresa.precio">
+                </div>
+                <button class="btn btn-danger" (click)="Eliminar()">Eliminar</button>
+            </form>
+        </div>
+    </div>
+</div>
